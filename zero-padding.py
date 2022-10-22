@@ -13,7 +13,6 @@ for filename in os.listdir(sys.argv[1]):
     zfilled = original.zfill(digits)
 
     if original != zfilled:
-        
         dir_path = os.path.abspath(dir_name)
         original_file_path = os.path.join(dir_path, filename)
         renamed_filename = filename.replace(original, zfilled)
